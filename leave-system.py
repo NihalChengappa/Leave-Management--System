@@ -30,7 +30,7 @@ def EmployeeLogin():
     title = "Employee Login"
     fieldnames = ["Employee ID", "Password"]
     field = []
-    field = multpasswordbox(message, title, fieldnames)
+    field = multpasswordbox(message,title,fieldnames)
     f = 0
     for row in conn.execute('SELECT * FROM employee'):
         if field[0] == row[0] and field[1] == row[3]:
